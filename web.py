@@ -4,7 +4,7 @@ import joblib
 
 # 尝试加载模型
 try:
-    model = joblib.load('A:/研究生/临床课题/专利/mlp.pkl')
+    model = joblib.load ('mlp.pkl')
 except Exception as e:
     st.error(f"加载模型时出错: {e}")
     st.stop()
@@ -45,3 +45,4 @@ if st.button("Prediction"):
             st.write("Postoperative nausea and vomiting [Yes ( ) / No (√)]")
     except Exception as e:
         st.write("预测过程中出现错误: ", e)
+
