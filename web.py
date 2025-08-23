@@ -10,7 +10,7 @@ except Exception as e:
     st.stop()
 
 # 应用标题
-st.title("PONV Prediction System")
+st.title("PONV Prediction ")
 st.write("Please enter the patient's anesthesia information data：")
 
 # 性别字段使用selectbox
@@ -45,4 +45,5 @@ if st.button("Prediction"):
             st.write("Postoperative nausea and vomiting [Yes ( ) / No (√)]")
     except Exception as e:
         st.write("预测过程中出现错误: ", e)
+
 
